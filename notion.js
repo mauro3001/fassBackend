@@ -24,13 +24,14 @@ const getUsers = async ({nameFilter} = {}) => {
 
     return results.map(page => {
         const { properties } = page
-        const { Name, Tags, User, Password, ImageUrl, DateTime } = properties
+        const { Name, Tags, User, Password, ImageUrl, DateTime, MoraCuota, MoraDeuda } = properties
 
         let name = Name.title.length > 0 ? Name.title[0].plain_text : 'Nombre no disponible';
         let user = User.rich_text.length > 0 ? User.rich_text[0].plain_text : 'Usuario no disponible';
         let password = Password.rich_text.length > 0 ? Password.rich_text[0].plain_text : 'Contraseña no disponible';
         let imageUrl = ImageUrl.files.length > 0 ? ImageUrl.files[0].file.url : 'No disponemos de imagen';
-
+        let moraCuota = MoraCuota.select?.name ?? 'No disponible';
+        let moraDeuda = MoraDeuda.select?.name ?? 'No disponible';
         return {
             name,
             tags: Tags.multi_select.map(tag => tag.name),
@@ -38,6 +39,8 @@ const getUsers = async ({nameFilter} = {}) => {
             password,
             date: DateTime.last_edited_time,
             imageUrl,
+            moraCuota,
+            moraDeuda
         }
     });
 }

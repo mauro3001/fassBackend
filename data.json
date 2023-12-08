@@ -5,7 +5,7 @@
       "object": "page",
       "id": "d13d18b7-902a-4e26-b584-d902a5ba1a49",
       "created_time": "2023-12-06T18:49:00.000Z",
-      "last_edited_time": "2023-12-06T18:53:00.000Z",
+      "last_edited_time": "2023-12-08T17:42:00.000Z",
       "created_by": {
         "object": "user",
         "id": "925ba7ee-c845-4d02-a84c-9bebafa8b3af"
@@ -68,6 +68,15 @@
             }
           ]
         },
+        "MoraCuota": {
+          "id": "YKho",
+          "type": "select",
+          "select": {
+            "id": "d2312f1e-9011-4f52-9890-c7888695d8a9",
+            "name": "no",
+            "color": "default"
+          }
+        },
         "Tags": {
           "id": "ZKBz",
           "type": "multi_select",
@@ -84,10 +93,19 @@
           "type": "files",
           "files": []
         },
+        "MoraDeuda": {
+          "id": "%7BW%3F%5D",
+          "type": "select",
+          "select": {
+            "id": "f48fcc20-583f-4fca-bf0c-e22b090b42b5",
+            "name": "no",
+            "color": "pink"
+          }
+        },
         "DateTime": {
           "id": "%7D%5BGK",
           "type": "last_edited_time",
-          "last_edited_time": "2023-12-06T18:53:00.000Z"
+          "last_edited_time": "2023-12-08T17:42:00.000Z"
         },
         "Name": {
           "id": "title",
@@ -120,7 +138,7 @@
       "object": "page",
       "id": "899dcc17-7d55-4d83-855f-d2063f81bbd0",
       "created_time": "2023-12-06T18:49:00.000Z",
-      "last_edited_time": "2023-12-06T18:53:00.000Z",
+      "last_edited_time": "2023-12-08T17:48:00.000Z",
       "created_by": {
         "object": "user",
         "id": "925ba7ee-c845-4d02-a84c-9bebafa8b3af"
@@ -183,6 +201,11 @@
             }
           ]
         },
+        "MoraCuota": {
+          "id": "YKho",
+          "type": "select",
+          "select": null
+        },
         "Tags": {
           "id": "ZKBz",
           "type": "multi_select",
@@ -199,10 +222,15 @@
           "type": "files",
           "files": []
         },
+        "MoraDeuda": {
+          "id": "%7BW%3F%5D",
+          "type": "select",
+          "select": null
+        },
         "DateTime": {
           "id": "%7D%5BGK",
           "type": "last_edited_time",
-          "last_edited_time": "2023-12-06T18:53:00.000Z"
+          "last_edited_time": "2023-12-08T17:48:00.000Z"
         },
         "Name": {
           "id": "title",
@@ -236,5 +264,5 @@
   "has_more": false,
   "type": "page_or_database",
   "page_or_database": {},
-  "request_id": "ee56ca84-8ed5-40e0-97d1-1804b7b41722"
+  "request_id": "dacd43b8-b304-4a8b-947c-768ec665b0bb"
 }
